@@ -11,7 +11,7 @@ def load_data(batch_size=64):
     Y_trn = np.load("../../datasets/ProgrammerWeb/npy_data/train_labels.npy")
     Y_tst = np.load("../../datasets/ProgrammerWeb/npy_data/test_labels.npy")
     # label_embed = np.load("../../datasets/ProgrammerWeb/npy_data/label_embed.npy")
-    with open('../../datasets/ProgrammerWeb/word_embedding_model/label_embed.pkl', 'rb') as pkl_file:
+    with open('../../datasets/ProgrammerWeb/word_embedding_model/glove_word2vec_wordnet.pkl', 'rb') as pkl_file:
         label_embed = pkl.load(pkl_file)
     embed = text.embedding.CustomEmbedding('../../datasets/ProgrammerWeb/npy_data/word_embed.txt')
     train_data = data_utils.TensorDataset(torch.from_numpy(X_trn).type(torch.LongTensor),
