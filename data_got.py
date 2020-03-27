@@ -4,6 +4,7 @@ import torch.utils.data as data_utils
 import torch
 import pickle as pkl
 
+
 def load_data(batch_size=64):
     X_tst = np.load("../../datasets/ProgrammerWeb/npy_data/test_texts.npy")
     X_trn = np.load("../../datasets/ProgrammerWeb/npy_data/train_texts.npy")
