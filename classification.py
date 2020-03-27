@@ -5,7 +5,7 @@ import utils as utils
 import data_got
 config = utils.read_config("config.yml")
 if config.GPU:
-    torch.cuda.set_device(3)
+    torch.cuda.set_device(1)
 print('loading data...\n')
 label_num = 54
 train_loader, test_loader, label_embed,embed,X_tst,word_to_id,Y_tst,Y_trn = data_got.load_data(batch_size=config.batch_size)
