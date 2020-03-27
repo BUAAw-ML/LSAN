@@ -1,7 +1,7 @@
 from attention.model import StructuredSelfAttention
 from attention.train import train
 import torch
-import data.utils as utils
+import utils as utils
 import data_got
 config = utils.read_config("config.yml")
 if config.GPU:
